@@ -28,7 +28,8 @@ body, .container {
     padding: 10px 20px;
 }
 
-.top img {
+.top img,
+.bottom img {
     align-self: center;
     justify-self: center;
 }
@@ -40,6 +41,44 @@ input {
     height: 30px;
     width: 75%;
     align-self: center;
+}
+
+.top h2 {
+    align-self: center;
+}
+
+.bottom {
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 100px 1fr repeat(3, 150px);
+    padding: 10px 20px;
+}
+
+.bottom h1,
+.bottom p {
+    align-self: center;
+}
+
+.bottom p {
+    font-weight: 800;
+}
+
+.bot-btn {
+    align-self: center;
+    border-style: none;
+    border-radius: 15px;
+    height: 40px;
+    background-color: #14213D;
+    color: #FFFFFF;
+    font-size: larger;
+    font-weight: 800;
+    margin: 0 10px;
+}
+
+.user {
+    display: grid;
+    grid-template-rows: 30px 50px;
+    grid-template-columns: 1fr;
 }
 
 .sidebar {

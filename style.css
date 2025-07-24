@@ -43,7 +43,8 @@ input {
     align-self: center;
 }
 
-.top h2 {
+.top h2,
+.announcements-content-header {
     align-self: center;
 }
 
@@ -196,5 +197,37 @@ input {
     background-color: #FFFFFF;
     border-style: none;
     border-radius: 15px;
+    padding: 15px;
+}
+
+.announcements-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    padding: 10px;
+}
+
+.announcements-content:nth-child(2) {
+    border-top: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.announcements-content-content p {
+    font-size: 14px;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #FFFFFF;
+    border-radius: 15px;
     padding: 25px;
+    align-items: center;
+}
+
+.trending-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
